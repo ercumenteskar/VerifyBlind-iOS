@@ -7,17 +7,16 @@ struct ContentView: View {
         VStack(spacing: 24) {
             Spacer()
 
-            Image(systemName: "person.text.rectangle.fill")
+            Image("logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 96, height: 96)
-                .foregroundStyle(.tint)
+                .frame(width: 130, height: 130)
 
             Text("VerifyBlind")
-                .font(.largeTitle.bold())
+                .font(.system(size: 34, weight: .semibold))
 
             Text("iOS — Aşama 0 boş iskelet")
-                .font(.subheadline)
+                .font(.system(size: 15))
                 .foregroundStyle(.secondary)
 
             VStack(alignment: .leading, spacing: 8) {
