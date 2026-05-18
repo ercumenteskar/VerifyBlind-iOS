@@ -18,7 +18,7 @@ iOS portu (VerifyBlind.Android uygulamasının işlevsel eşdeğeri). Mac'siz ge
 - Code signing: CodeMagic Distribution → iOS code signing → otomatik provisioning (App Store distribution + manual signing)
 - Environment groups oluştur:
   - **`verifyblind_ios_dev`** (dev branch için):
-    - `API_BASE_URL_DEV=https://dev.api.verifyblind.com/api/Verify/`
+    - `APP_BASE_URL_DEV=https://dev.api.verifyblind.com/api/Verify/`
     - `IOS_BUNDLE_ID=app.verifyblind.ios`
     - `APPLE_TEAM_ID=<senin Team ID>`
     - `IOS_CERT_PIN_1=<SHA256 SPKI hash>`, `IOS_CERT_PIN_2=<root hash>`
@@ -27,7 +27,7 @@ iOS portu (VerifyBlind.Android uygulamasının işlevsel eşdeğeri). Mac'siz ge
     - `SENTRY_DSN=<sentry projesinden alınır>`
     - `DROPBOX_IOS_APP_KEY=<dropbox dev console>`
     - `APP_STORE_APP_ID=<App Store Connect numerik ID>`
-  - **`verifyblind_ios_prod`** (main branch için): Aynı değişkenler + `API_BASE_URL_PROD=https://api.verifyblind.com/api/Verify/`
+  - **`verifyblind_ios_prod`** (main branch için): Aynı değişkenler + `APP_BASE_URL_PROD=https://api.verifyblind.com/api/Verify/`
 
 ### 4) Sentry projesi
 - sentry.io'da yeni iOS projesi → DSN'i kopyala → CodeMagic env'e gir
